@@ -1,0 +1,13 @@
+{
+  "name": "bootstrap-assignment",
+  "version": "1.0.0",
+  "description": "Bootstrap Assignment",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "George Filipovic",
+  "license": "private",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

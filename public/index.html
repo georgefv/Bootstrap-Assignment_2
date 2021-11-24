@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>INM320 Bootstrap Assignment</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="\assets\css\style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- NavBar - Taken from Bootstrap Website -->
+
+    <main>
+        <h1 class="visually-hidden">Sidebars examples</h1>
+
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="5" height="32"><img src="\assets\images\logo.svg" /></svg>
+                <span class="fs-4">Dashboard Kit</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                        <svg class="bi me-2" width="16" height="16">
+                            <img src="\assets\images\overview.svg" />
+                        </svg>
+                        <p>Overview</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <img src="\assets\images\tickets.svg" />
+                        </svg>
+                        <p>Tickets</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <img src="\assets\images\ideas.svg" />
+                        </svg>
+                        <p>Ideas</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <img src="\assets\images\contacts.svg" />
+                        </svg>
+                        <p>Contacts</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <img src="\assets\images\agents.svg" />
+                        </svg>
+                        <p>Agents</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <img src="\assets\images\articles.svg" />
+                        </svg>
+                        <p>Articles</p>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <img src="\assets\images\settings.svg" />
+                        </svg>
+                        <p>Settings</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <img src="\assets\images\subscription.svg" />
+                        </svg>
+                        <p>Subscription</p>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <!-- Overview Page -->
+
+        <div id="overview-window" class="container-fluid overflow-auto">
+            <div id="centering-cont" class="container-fluid">
+
+                <!-- Overview Bar  -->
+                <div id="overview-bar" class="row">
+                    <div class="col-4 col-md-5 col-lg-7 col-xl-8">Overview</div>
+                    <div class="col-8 col-md-7 col-lg-5 col-xl-4">
+                        <div id="overview-icons" class="row">
+                            <div class="col-2">
+                                <img src="\assets\images\search.svg" />
+                            </div>
+                            <div class="col-2">
+                                <img src="\assets\images\new.svg" />
+                            </div>
+                            <div class="col-1">
+                                <img src="\assets\images\divider.svg" />
+                            </div>
+                            <div class="col-5">
+                                <p>Jones Ferdinand</p>
+                            </div>
+                            <div class="col-2">
+                                <img src="\assets\images\avatar.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Tickets Blocks -->
+                <section id="ticket_blocks" class="row justify-content-between">
+                    <figure class="col bg-white rounded-3 me-3 border">
+                        <div class="row">
+                            <p id="card_title" class="row justify-content-center">Unresolved</p>
+                        </div>
+                        <div class="row">
+                            <p id="card_number" class="row justify-content-center">60</p>
+                        </div>
+                    </figure>
+                    <figure class="col bg-white rounded-3 ms-2 me-3 border">
+                        <div class="row">
+                            <p id="card_title" class="row justify-content-center">Overdue</p>
+                        </div>
+                        <div class="row">
+                            <p id="card_number" class="row justify-content-center">16</p>
+                        </div>
+                    </figure>
+                    <figure class="col bg-white rounded-3 ms-3 me-3 border">
+                        <div class="row">
+                            <p id="card_title" class="row justify-content-center">Open</p>
+                        </div>
+                        <div class="row">
+                            <p id="card_number" class="row justify-content-center">43</p>
+                        </div>
+                    </figure>
+                    <figure class="col bg-white rounded-3 ms-3 border">
+                        <div class="row">
+                            <p id="card_title" class="row justify-content-center">On hold</p>
+                        </div>
+                        <div class="row">
+                            <p id="card_number" class="row justify-content-center">64</p>
+                        </div>
+                    </figure>
+                </section>
+
+                <!-- Today's trends window -->
+
+                <section id="today_trends" class="row bg-white border rounded-3 ">
+                    <figure id="td_left_side" class="col-8 border-end">
+                        <div class="row">
+                            <p>Today's trends</p>
+                        </div>
+                        <div class="row">
+                            <img src="\assets\images\chart.jpg" alt="Today's trends graph">
+                        </div>
+
+                    </figure>
+
+                    <figure id="td_right_side" class="col-4">
+                        <div class="row border-bottom h-20">
+                            <p class="row justify-content-center">Resolved</p>
+                            <p class="row justify-content-center">449</p>
+                        </div>
+                        <div class="row border-bottom">
+                            <p class="row justify-content-center">Received</p>
+                            <p class="row justify-content-center">426</p>
+                        </div>
+                        <div class="row border-bottom">
+                            <p class="row justify-content-center">Average first response time</p>
+                            <p class="row justify-content-center">33m</p>
+                        </div>
+                        <div class="row border-bottom">
+                            <p class="row justify-content-center">Average response time</p>
+                            <p class="row justify-content-center">3h 8m</p>
+                        </div>
+                        <div class="row">
+                            <p class="row justify-content-center">Resolution within SLA</p>
+                            <p class="row justify-content-center">94%</p>
+                        </div>
+                    </figure>
+                </section>
+
+                <!-- Unresolved tickets & Tasks -->
+
+                <!-- Tickets part -->
+
+                <section id="unresolved_and_tasks" class="row rounded-3 mt-3">
+
+                    <article class="col bg-white border me-2 rounded-3">
+                        <figure class="col me-3">
+                            <div class="row ">
+                                <p class="col">Unresolved tickets</p>
+                                <p class="col text-end">View details</p>
+                            </div>
+                            <div class="col">
+                                <p>Group:</p>
+                                <p>Support</p>
+                            </div>
+                            <div class="row ">
+                                <p id="left_items" class="col">Waiting on Feature Request</p>
+                                <p id="right_items" class="col text-end me-3">4238</p>
+                            </div>
+                        </figure>
+                        <figure class="row border-top me-3">
+                            <p id="left_items" class="col">Awaiting Customer Response</p>
+                            <p id="right_items" class="col text-end">1005</p>
+                        </figure>
+                        <figure class="row border-top me-3">
+                            <p id="left_items" class="col">Awaiting Developer Fix</p>
+                            <p id="right_items" class="col text-end">914</p>
+                        </figure>
+                        <figure class="row border-top me-3">
+                            <p id="left_items" class="col">Pending</p>
+                            <p id="right_items" class="col text-end">281</p>
+                        </figure>
+                    </article>
+
+                    <!-- Tasks part -->
+
+                    <article class="col bg-white border me-2 rounded-3">
+                        <figure class="col me-3">
+                            <div class="row ">
+                                <p class="col">Tasks</p>
+                                <p class="col text-end">View all</p>
+                            </div>
+                            <div class="col">
+                                <p>Today</p>
+                            </div>
+                            <div class="row ">
+                                <p class="col">Create new task</p>
+                                <div class="col text-end">
+                                    <img src="\assets\images\new_task.svg">
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="row border-top me-1 ms-1">
+                            <div id="left_items" class="col form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Finish ticket update
+                                </label>
+                            </div>
+                            <div id="right_items" class="col text-end">
+                                <img src="\assets\images\urgent.svg">
+                            </div>
+                        </figure>
+                        <figure class="row border-top me-1 ms-1">
+                            <div id="left_items" class="col form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Create new ticket example
+                                </label>
+                            </div>
+
+                            <div id="right_items" class="col text-end">
+                                <img src="\assets\images\new_button.svg">
+                            </div>
+                        </figure>
+                        <figure class="row border-top me-1 ms-1">
+                            <div id="left_items" class="col form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Update ticket report
+                                </label>
+                            </div>
+                            <div id="right_items" class="col text-end">
+                                <img src="\assets\images\default.svg">
+                            </div>
+                        </figure>
+                    </article>
+
+
+                </section>
+
+            </div>
+        </div>
+
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+            integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+            integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+            crossorigin="anonymous"></script>
+        <script src="dashboard.js"></script>
+
+</body>
+
+</html>
